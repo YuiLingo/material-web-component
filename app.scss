@@ -1,0 +1,57 @@
+@use "scss/reset";
+
+//Top App Bar
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+//Drawer
+@use "@material/drawer";
+
+//List
+@use "@material/list";
+
+//Elevation
+@use "@material/elevation/mdc-elevation";
+
+//Button
+@use "@material/button/styles" as button;
+
+//Icon Button
+@use "@material/icon-button/styles" as iconbutton;
+
+//Card
+@use "@material/card";
+
+//Form Field (only for Checkbox + Radio)
+@use "@material/form-field";
+
+//Checkbox
+@use "@material/checkbox";
+
+// Select
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/select/styles" as select;
+
+//MDC Typography
+@use "@material/typography/mdc-typography";
+
+
+//Bootstrap + Bootstrap-Table by Wenzhixin + Materialize Theme
+@import 'scss/materialize/materialize.scss';
+
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.deprecated-core-styles;
+@include card.core-styles;
+@include checkbox.core-styles;
+@include form-field.core-styles;
+
+// @import 'bootstrap-table/dist/themes/materialize/bootstrap-table-materialize.min.css';
+// @import 'bootstrap-table/dist/extensions/fixed-columns/bootstrap-table-fixed-columns.min.css';
+
+@import "scss/variables";
+@import "scss/common";
+
+//Theme Variables

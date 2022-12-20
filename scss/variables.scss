@@ -1,0 +1,813 @@
+$inherit:inherit;
+
+:root {
+    --mdc-typography-font-family: Roboto, sans-serif;
+
+    --mdc-typography-headline1-font-family: #{$inherit};
+    --mdc-typography-headline1-font-size: 6rem;
+    --mdc-typography-headline1-line-height: 6rem;
+    --mdc-typography-headline1-font-weight: 300;
+    --mdc-typography-headline1-letter-spacing: -0.015625em;
+    --mdc-typography-headline1-text-decoration: #{$inherit};
+    --mdc-typography-headline1-text-transform: #{$inherit};
+
+    --mdc-typography-headline2-font-family: #{$inherit};
+    --mdc-typography-headline2-font-size: 3.75rem;
+    --mdc-typography-headline2-line-height: 3.75rem;
+    --mdc-typography-headline2-font-weight: 300;
+    --mdc-typography-headline2-letter-spacing: -0.0083333333em;
+    --mdc-typography-headline2-text-decoration: #{$inherit};
+    --mdc-typography-headline2-text-transform: #{$inherit};
+
+    --mdc-typography-headline3-font-family: #{$inherit};
+    --mdc-typography-headline3-font-size: 3rem;
+    --mdc-typography-headline3-line-height: 3.125rem;
+    --mdc-typography-headline3-font-weight: 400;
+    --mdc-typography-headline3-letter-spacing: normal;
+    --mdc-typography-headline3-text-decoration: #{$inherit};
+    --mdc-typography-headline3-text-transform: #{$inherit};
+
+    --mdc-typography-headline4-font-family: #{$inherit};
+    --mdc-typography-headline4-font-size: 2.125rem;
+    --mdc-typography-headline4-line-height: 2.5rem;
+    --mdc-typography-headline4-font-weight: 400;
+    --mdc-typography-headline4-letter-spacing: 0.0073529412em;
+    --mdc-typography-headline4-text-decoration: #{$inherit};
+    --mdc-typography-headline4-text-transform: #{$inherit};
+
+    --mdc-typography-headline5-font-family: #{$inherit};
+    --mdc-typography-headline5-font-size: 1.5rem;
+    --mdc-typography-headline5-line-height: 2rem;
+    --mdc-typography-headline5-font-weight: 400;
+    --mdc-typography-headline5-letter-spacing: normal;
+    --mdc-typography-headline5-text-decoration: #{$inherit};
+    --mdc-typography-headline5-text-transform: #{$inherit};
+
+    --mdc-typography-headline6-font-family: #{$inherit};
+    --mdc-typography-headline6-font-size: 1.25rem;
+    --mdc-typography-headline6-line-height: 2rem;
+    --mdc-typography-headline6-font-weight: 500;
+    --mdc-typography-headline6-letter-spacing: 0.0125em;
+    --mdc-typography-headline6-text-decoration: #{$inherit};
+    --mdc-typography-headline6-text-transform: #{$inherit};
+
+    --mdc-typography-subtitle1-font-family: #{$inherit};
+    --mdc-typography-subtitle1-font-size: 1rem;
+    --mdc-typography-subtitle1-line-height: 1.75rem;
+    --mdc-typography-subtitle1-font-weight: 400;
+    --mdc-typography-subtitle1-letter-spacing: 0.009375em;
+    --mdc-typography-subtitle1-text-decoration: #{$inherit};
+    --mdc-typography-subtitle1-text-transform: #{$inherit};
+
+    --mdc-typography-subtitle2-font-family: #{$inherit};
+    --mdc-typography-subtitle2-font-size: 0.875rem;
+    --mdc-typography-subtitle2-line-height: 1.375rem;
+    --mdc-typography-subtitle2-font-weight: 500;
+    --mdc-typography-subtitle2-letter-spacing: 0.0071428571em;
+    --mdc-typography-subtitle2-text-decoration: #{$inherit};
+    --mdc-typography-subtitle2-text-transform: #{$inherit};
+
+    --mdc-typography-body1-font-family: #{$inherit};
+    --mdc-typography-body1-font-size: 1rem;
+    --mdc-typography-body1-line-height: 1.5rem;
+    --mdc-typography-body1-font-weight: 400;
+    --mdc-typography-body1-letter-spacing: 0.03125em;
+    --mdc-typography-body1-text-decoration: #{$inherit};
+    --mdc-typography-body1-text-transform: #{$inherit};
+
+    --mdc-typography-body2-font-family: #{$inherit};
+    --mdc-typography-body2-font-size: 0.875rem;
+    --mdc-typography-body2-line-height: 1.25rem;
+    --mdc-typography-body2-font-weight: 400;
+    --mdc-typography-body2-letter-spacing: 0.0178571429em;
+    --mdc-typography-body2-text-decoration: #{$inherit};
+    --mdc-typography-body2-text-transform: #{$inherit};
+
+    --mdc-typography-caption-font-family: #{$inherit};
+    --mdc-typography-caption-font-size: 0.75rem;
+    --mdc-typography-caption-line-height: 1.25rem;
+    --mdc-typography-caption-font-weight: 400;
+    --mdc-typography-caption-letter-spacing: 0.0333333333em;
+    --mdc-typography-caption-text-decoration: #{$inherit};
+    --mdc-typography-caption-text-transform: #{$inherit};
+
+    --mdc-typography-button-font-family: #{$inherit};
+    --mdc-typography-button-font-size: 0.875rem;
+    --mdc-typography-button-line-height: 2.25rem;
+    --mdc-typography-button-font-weight: 500;
+    --mdc-typography-button-letter-spacing: 0.0892857143em;
+    --mdc-typography-button-text-decoration: #{$inherit};
+    --mdc-typography-button-text-transform: uppercase;
+
+    --mdc-typography-overline-font-family: #{$inherit};
+    --mdc-typography-overline-font-size: 0.75rem;
+    --mdc-typography-overline-line-height: 2rem;
+    --mdc-typography-overline-font-weight: 500;
+    --mdc-typography-overline-letter-spacing: 0.1666666667em;
+    --mdc-typography-overline-text-decoration: none;
+    --mdc-typography-overline-text-transform: uppercase;
+
+
+
+    --mdc-elevation--z1: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    --mdc-elevation--z2: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    --mdc-elevation--z3: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    --mdc-elevation--z4: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    --mdc-elevation--z5: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+    --mdc-elevation--z6: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    --mdc-elevation--z7: 0px 4px 5px -2px rgb(0 0 0 / 20%), 0px 7px 10px 1px rgb(0 0 0 / 14%), 0px 2px 16px 1px rgb(0 0 0 / 12%);
+    --mdc-elevation--z8: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+    --mdc-elevation--z9: 0px 5px 6px -3px rgb(0 0 0 / 20%), 0px 9px 12px 1px rgb(0 0 0 / 14%), 0px 3px 16px 2px rgb(0 0 0 / 12%);
+    --mdc-elevation--z10: 0px 6px 6px -3px rgb(0 0 0 / 20%), 0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
+    --mdc-elevation--z11: 0px 6px 7px -4px rgb(0 0 0 / 20%), 0px 11px 15px 1px rgb(0 0 0 / 14%), 0px 4px 20px 3px rgb(0 0 0 / 12%);
+    --mdc-elevation--z12: 0px 7px 8px -4px rgb(0 0 0 / 20%), 0px 12px 17px 2px rgb(0 0 0 / 14%), 0px 5px 22px 4px rgb(0 0 0 / 12%);
+    --mdc-elevation--z13: 0px 7px 8px -4px rgb(0 0 0 / 20%), 0px 13px 19px 2px rgb(0 0 0 / 14%), 0px 5px 24px 4px rgb(0 0 0 / 12%);
+    --mdc-elevation--z14: 0px 7px 9px -4px rgb(0 0 0 / 20%), 0px 14px 21px 2px rgb(0 0 0 / 14%), 0px 5px 26px 4px rgb(0 0 0 / 12%);
+    --mdc-elevation--z15: 0px 8px 9px -5px rgb(0 0 0 / 20%), 0px 15px 22px 2px rgb(0 0 0 / 14%), 0px 6px 28px 5px rgb(0 0 0 / 12%);
+    --mdc-elevation--z16: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%);
+    --mdc-elevation--z17: 0px 8px 11px -5px rgb(0 0 0 / 20%), 0px 17px 26px 2px rgb(0 0 0 / 14%), 0px 6px 32px 5px rgb(0 0 0 / 12%);
+    --mdc-elevation--z18: 0px 9px 11px -5px rgb(0 0 0 / 20%), 0px 18px 28px 2px rgb(0 0 0 / 14%), 0px 7px 34px 6px rgb(0 0 0 / 12%);
+    --mdc-elevation--z19: 0px 9px 12px -6px rgb(0 0 0 / 20%), 0px 19px 29px 2px rgb(0 0 0 / 14%), 0px 7px 36px 6px rgb(0 0 0 / 12%);
+    --mdc-elevation--z20: 0px 10px 13px -6px rgb(0 0 0 / 20%), 0px 20px 31px 3px rgb(0 0 0 / 14%), 0px 8px 38px 7px rgb(0 0 0 / 12%);
+    --mdc-elevation--z21: 0px 10px 13px -6px rgb(0 0 0 / 20%), 0px 21px 33px 3px rgb(0 0 0 / 14%), 0px 8px 40px 7px rgb(0 0 0 / 12%);
+    --mdc-elevation--z22: 0px 10px 14px -6px rgb(0 0 0 / 20%), 0px 22px 35px 3px rgb(0 0 0 / 14%), 0px 8px 42px 7px rgb(0 0 0 / 12%);
+    --mdc-elevation--z23: 0px 11px 14px -7px rgb(0 0 0 / 20%), 0px 23px 36px 3px rgb(0 0 0 / 14%), 0px 9px 44px 8px rgb(0 0 0 / 12%);
+    --mdc-elevation--z24: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
+
+    @media (prefers-color-scheme: light) {
+        --mdc-theme-primary: #006874;
+        --mdc-theme-on-primary: #ffffff;
+        --mdc-theme-primary-container: #96f0ff;
+        --mdc-theme-on-primary-container: #001f24;
+
+        // --mdc-theme-secondary: #5c6300;
+        // --mdc-theme-on-secondary: #ffffff;
+        --mdc-theme-secondary: #4a6267;
+        --mdc-theme-on-secondary: #ffffff;
+        --mdc-theme-secondary-container: #cde7ec;
+        --mdc-theme-on-secondary-container: #051f23;
+
+        --mdc-theme-tertiary:#525e7d;
+        --mdc-theme-on-tertiary:#ffffff;
+        --mdc-theme-tertiary-container: #dae2ff;
+        --mdc-theme-on-tertiary-container: #0e1b37;
+
+        --mdc-theme-error:#ba1a1a;
+        --mdc-theme-on-error:#ffffff;
+        --mdc-theme-error-container: #ffdad6;
+        --mdc-theme-on-error-container: #410002;
+
+        //--mdc-theme-surface: #fafdfd;
+        --mdc-theme-surface-base: 180, 5%;
+        --mdc-theme-surface-l: 98.63%;
+        --mdc-theme-surface: hsl(var(--mdc-theme-surface-base),var(--mdc-theme-surface-l));
+            --mdc-theme-surface-z1: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 2%));
+            --mdc-theme-surface-z2: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 4%));
+            --mdc-theme-surface-z3: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 6%));
+            --mdc-theme-surface-z4: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 8%));
+            --mdc-theme-surface-z5: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 10%));
+            --mdc-theme-surface-z6: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 11%));
+            --mdc-theme-surface-z7: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 12%));
+            --mdc-theme-surface-z8: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 14%));
+            --mdc-theme-surface-z9: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 16%));
+            --mdc-theme-surface-z10: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 18%));
+            --mdc-theme-surface-z11: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 20%));
+            --mdc-theme-surface-z12: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 22%));
+            --mdc-theme-surface-z13: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 24%));
+            --mdc-theme-surface-z14: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 26%));
+            --mdc-theme-surface-z15: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 28%));
+            --mdc-theme-surface-z16: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 30%));
+            --mdc-theme-surface-z17: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 32%));
+            --mdc-theme-surface-z18: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 34%));
+            --mdc-theme-surface-z19: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 36%));
+            --mdc-theme-surface-z20: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 38%));
+            --mdc-theme-surface-z21: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 40%));
+            --mdc-theme-surface-z22: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 42%));
+            --mdc-theme-surface-z23: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 44%));
+            --mdc-theme-surface-z24: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) - 46%));
+        --mdc-theme-on-surface: #191c1d;
+        --mdc-theme-surface-variant:#dbe4e6;
+        --mdc-theme-on-surface-variant:#3f484a;
+
+        --mdc-theme-background: #fafdfd;
+        --mdc-theme-on-background: #191c1d;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --mdc-theme-primary: #4fd8eb;
+        --mdc-theme-on-primary: #00363d;
+        --mdc-theme-primary-container: #004f57;
+        --mdc-theme-on-primary-container: #96f0ff;
+
+        // --mdc-theme-secondary: #c2d016;
+        // --mdc-theme-on-secondary: #2f3300;
+        --mdc-theme-secondary: #b1cbd0;
+        --mdc-theme-on-secondary: #1c3438;
+        --mdc-theme-secondary-container: #334b4f;
+        --mdc-theme-on-secondary-container: #cde7ec;
+
+        --mdc-theme-tertiary:#bac6ea;
+        --mdc-theme-on-tertiary:#24304d;
+        --mdc-theme-tertiary-container: #3b4664;
+        --mdc-theme-on-tertiary-container: #dae2ff;
+
+        --mdc-theme-error:#ffb4ab;
+        --mdc-theme-on-error:#ffb4ab;
+        --mdc-theme-error-container: #93000a;
+        --mdc-theme-on-error-container: #ffdad6;
+
+        --mdc-theme-surface-base: 195, 7.4%;
+        --mdc-theme-surface-l: 15.6%;
+        --mdc-theme-surface: hsl(var(--mdc-theme-surface-base),var(--mdc-theme-surface-l));
+            --mdc-theme-surface-z1: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 2%));
+            --mdc-theme-surface-z2: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 4%));
+            --mdc-theme-surface-z3: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 6%));
+            --mdc-theme-surface-z4: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 8%));
+            --mdc-theme-surface-z5: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 10%));
+            --mdc-theme-surface-z6: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 11%));
+            --mdc-theme-surface-z7: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 12%));
+            --mdc-theme-surface-z8: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 14%));
+            --mdc-theme-surface-z9: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 16%));
+            --mdc-theme-surface-z10: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 18%));
+            --mdc-theme-surface-z11: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 20%));
+            --mdc-theme-surface-z12: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 22%));
+            --mdc-theme-surface-z13: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 24%));
+            --mdc-theme-surface-z14: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 26%));
+            --mdc-theme-surface-z15: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 28%));
+            --mdc-theme-surface-z16: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 30%));
+            --mdc-theme-surface-z17: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 32%));
+            --mdc-theme-surface-z18: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 34%));
+            --mdc-theme-surface-z19: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 36%));
+            --mdc-theme-surface-z20: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 38%));
+            --mdc-theme-surface-z21: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 40%));
+            --mdc-theme-surface-z22: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 42%));
+            --mdc-theme-surface-z23: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 44%));
+            --mdc-theme-surface-z24: hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 46%));
+        --mdc-theme-on-surface: #e1e3e3;
+        --mdc-theme-surface-variant:#3f484a;
+        --mdc-theme-on-surface-variant:#bfc8ca;
+
+        --mdc-theme-background: #191c1d;
+        --mdc-theme-on-background: #e1e3e3;
+
+        // Others
+        --mdc-outlined-button-outline-color:hsl(var(--mdc-theme-surface-base),calc(var(--mdc-theme-surface-l) + 29%));
+
+    }
+}
+
+
+
+//////////// Elevation Settings
+
+@mixin elevationZ1 {
+    box-shadow:var(--mdc-elevation--z1);
+}
+
+@mixin elevationZ2 {
+    box-shadow:var(--mdc-elevation--z2);
+}
+
+@mixin elevationZ3 {
+    box-shadow:var(--mdc-elevation--z3);
+}
+
+@mixin elevationZ4 {
+    box-shadow:var(--mdc-elevation--z4);
+}
+
+@mixin elevationZ5 {
+    box-shadow:var(--mdc-elevation--z5);
+}
+
+@mixin elevationZ6 {
+    box-shadow:var(--mdc-elevation--z6);
+}
+
+@mixin elevationZ7 {
+    box-shadow:var(--mdc-elevation--z7);
+}
+
+@mixin elevationZ8 {
+    box-shadow:var(--mdc-elevation--z8);
+}
+
+@mixin elevationZ9 {
+    box-shadow:var(--mdc-elevation--z9);
+}
+
+@mixin elevationZ10 {
+    box-shadow:var(--mdc-elevation--z10);
+}
+
+@mixin elevationZ11 {
+    box-shadow:var(--mdc-elevation--z11);
+}
+
+@mixin elevationZ12 {
+    box-shadow:var(--mdc-elevation--z12);
+}
+
+@mixin elevationZ13 {
+    box-shadow:var(--mdc-elevation--z13);
+}
+
+@mixin elevationZ14 {
+    box-shadow:var(--mdc-elevation--z14);
+}
+
+@mixin elevationZ15 {
+    box-shadow:var(--mdc-elevation--z15);
+}
+
+@mixin elevationZ16 {
+    box-shadow:var(--mdc-elevation--z16);
+}
+
+@mixin elevationZ17 {
+    box-shadow:var(--mdc-elevation--z17);
+}
+
+@mixin elevationZ18 {
+    box-shadow:var(--mdc-elevation--z18);
+}
+
+@mixin elevationZ19 {
+    box-shadow:var(--mdc-elevation--z19);
+}
+
+@mixin elevationZ20 {
+    box-shadow:var(--mdc-elevation--z20);
+}
+
+@mixin elevationZ21 {
+    box-shadow:var(--mdc-elevation--z21);
+}
+
+@mixin elevationZ22 {
+    box-shadow:var(--mdc-elevation--z22);
+}
+
+@mixin elevationZ23 {
+    box-shadow:var(--mdc-elevation--z23);
+}
+
+@mixin elevationZ24 {
+    box-shadow:var(--mdc-elevation--z24);
+}
+
+
+@mixin elevationBGZ1 {
+    background:var(--mdc-theme-surface-z1);
+}
+
+@mixin elevationBGZ2 {
+    background:var(--mdc-theme-surface-z2);
+}
+
+@mixin elevationBGZ3 {
+    background:var(--mdc-theme-surface-z3);
+}
+
+@mixin elevationBGZ4 {
+    background:var(--mdc-theme-surface-z4);
+}
+
+@mixin elevationBGZ5 {
+    background:var(--mdc-theme-surface-z5);
+}
+
+@mixin elevationBGZ6 {
+    background:var(--mdc-theme-surface-z6);
+}
+
+@mixin elevationBGZ7 {
+    background:var(--mdc-theme-surface-z7);
+}
+
+@mixin elevationBGZ8 {
+    background:var(--mdc-theme-surface-z8);
+}
+
+@mixin elevationBGZ9 {
+    background:var(--mdc-theme-surface-z9);
+}
+
+@mixin elevationBGZ10 {
+    background:var(--mdc-theme-surface-z10);
+}
+
+@mixin elevationBGZ11 {
+    background:var(--mdc-theme-surface-z11);
+}
+
+@mixin elevationBGZ12 {
+    background:var(--mdc-theme-surface-z12);
+}
+
+@mixin elevationBGZ13 {
+    background:var(--mdc-theme-surface-z13);
+}
+
+@mixin elevationBGZ14 {
+    background:var(--mdc-theme-surface-z14);
+}
+
+@mixin elevationBGZ15 {
+    background:var(--mdc-theme-surface-z15);
+}
+
+@mixin elevationBGZ16 {
+    background:var(--mdc-theme-surface-z16);
+}
+
+@mixin elevationBGZ17 {
+    background:var(--mdc-theme-surface-z17);
+}
+
+@mixin elevationBGZ18 {
+    background:var(--mdc-theme-surface-z18);
+}
+
+@mixin elevationBGZ19 {
+    background:var(--mdc-theme-surface-z19);
+}
+
+@mixin elevationBGZ20 {
+    background:var(--mdc-theme-surface-z20);
+}
+
+@mixin elevationBGZ21 {
+    background:var(--mdc-theme-surface-z21);
+}
+
+@mixin elevationBGZ22 {
+    background:var(--mdc-theme-surface-z22);
+}
+
+@mixin elevationBGZ23 {
+    background:var(--mdc-theme-surface-z23);
+}
+
+@mixin elevationBGZ24 {
+    background:var(--mdc-theme-surface-z24);
+}
+
+
+//////////// Elevation Settings
+
+
+
+
+
+
+
+
+
+
+//////////// Typography Settings
+@mixin headline1 {
+    font-family:var(--mdc-typography-headline1-font-family);
+    font-size:var(--mdc-typography-headline1-font-size);
+    line-height:var(--mdc-typography-headline1-line-height);
+    font-weight:var(--mdc-typography-headline1-font-weight);
+    letter-spacing:var(--mdc-typography-headline1-letter-spacing);
+    text-decoration:var(--mdc-typography-headline1-text-decoration);
+    text-transform:var(--mdc-typography-headline1-text-transform);
+}
+
+@mixin heading2 {
+    font-family:var(--mdc-typography-headline2-font-family);
+    font-size:var(--mdc-typography-headline2-font-size);
+    line-height:var(--mdc-typography-headline2-line-height);
+    font-weight:var(--mdc-typography-headline2-font-weight);
+    letter-spacing:var(--mdc-typography-headline2-letter-spacing);
+    text-decoration:var(--mdc-typography-headline2-text-decoration);
+    text-transform:var(--mdc-typography-headline2-text-transform);
+}
+
+@mixin heading3 {
+    font-family:var(--mdc-typography-headline3-font-family);
+    font-size:var(--mdc-typography-headline3-font-size);
+    line-height:var(--mdc-typography-headline3-line-height);
+    font-weight:var(--mdc-typography-headline3-font-weight);
+    letter-spacing:var(--mdc-typography-headline3-letter-spacing);
+    text-decoration:var(--mdc-typography-headline3-text-decoration);
+    text-transform:var(--mdc-typography-headline3-text-transform);
+}
+
+@mixin heading4 {
+    font-family:var(--mdc-typography-headline4-font-family);
+    font-size:var(--mdc-typography-headline4-font-size);
+    line-height:var(--mdc-typography-headline4-line-height);
+    font-weight:var(--mdc-typography-headline4-font-weight);
+    letter-spacing:var(--mdc-typography-headline4-letter-spacing);
+    text-decoration:var(--mdc-typography-headline4-text-decoration);
+    text-transform:var(--mdc-typography-headline4-text-transform);
+}
+
+@mixin heading5 {
+    font-family:var(--mdc-typography-headline5-font-family);
+    font-size:var(--mdc-typography-headline5-font-size);
+    line-height:var(--mdc-typography-headline5-line-height);
+    font-weight:var(--mdc-typography-headline5-font-weight);
+    letter-spacing:var(--mdc-typography-headline5-letter-spacing);
+    text-decoration:var(--mdc-typography-headline5-text-decoration);
+    text-transform:var(--mdc-typography-headline5-text-transform);
+}
+
+@mixin headline6 {
+    font-family:var(--mdc-typography-headline6-font-family);
+    font-size:var(--mdc-typography-headline6-font-size);
+    line-height:var(--mdc-typography-headline6-line-height);
+    font-weight:var(--mdc-typography-headline6-font-weight);
+    letter-spacing:var(--mdc-typography-headline6-letter-spacing);
+    text-decoration:var(--mdc-typography-headline6-text-decoration);
+    text-transform:var(--mdc-typography-headline6-text-transform);
+}
+
+@mixin subtitle1 {
+    font-family:var(--mdc-typography-subtitle1-font-family);
+    font-size:var(--mdc-typography-subtitle1-font-size);
+    line-height:var(--mdc-typography-subtitle1-line-height);
+    font-weight:var(--mdc-typography-subtitle1-font-weight);
+    letter-spacing:var(--mdc-typography-subtitle1-letter-spacing);
+    text-decoration:var(--mdc-typography-subtitle1-text-decoration);
+    text-transform:var(--mdc-typography-subtitle1-text-transform);
+}
+
+@mixin subtitle2 {
+    font-family:var(--mdc-typography-subtitle2-font-family);
+    font-size:var(--mdc-typography-subtitle2-font-size);
+    line-height:var(--mdc-typography-subtitle2-line-height);
+    font-weight:var(--mdc-typography-subtitle2-font-weight);
+    letter-spacing:var(--mdc-typography-subtitle2-letter-spacing);
+    text-decoration:var(--mdc-typography-subtitle2-text-decoration);
+    text-transform:var(--mdc-typography-subtitle2-text-transform);
+}
+
+@mixin body1 {
+    font-family:var(--mdc-typography-body1-font-family);
+    font-size:var(--mdc-typography-body1-font-size);
+    line-height:var(--mdc-typography-body1-line-height);
+    font-weight:var(--mdc-typography-body1-font-weight);
+    letter-spacing:var(--mdc-typography-body1-letter-spacing);
+    text-decoration:var(--mdc-typography-body1-text-decoration);
+    text-transform:var(--mdc-typography-body1-text-transform);
+}
+
+@mixin body2 {
+    font-family:var(--mdc-typography-body2-font-family);
+    font-size:var(--mdc-typography-body2-font-size);
+    line-height:var(--mdc-typography-body2-line-height);
+    font-weight:var(--mdc-typography-body2-font-weight);
+    letter-spacing:var(--mdc-typography-body2-letter-spacing);
+    text-decoration:var(--mdc-typography-body2-text-decoration);
+    text-transform:var(--mdc-typography-body2-text-transform);
+}
+
+@mixin caption {
+    font-family:var(--mdc-typography-caption-font-family);
+    font-size:var(--mdc-typography-caption-font-size);
+    line-height:var(--mdc-typography-caption-line-height);
+    font-weight:var(--mdc-typography-caption-font-weight);
+    letter-spacing:var(--mdc-typography-caption-letter-spacing);
+    text-decoration:var(--mdc-typography-caption-text-decoration);
+    text-transform:var(--mdc-typography-caption-text-transform);
+}
+
+@mixin button {
+    font-family:var(--mdc-typography-button-font-family);
+    font-size:var(--mdc-typography-button-font-size);
+    line-height:var(--mdc-typography-button-line-height);
+    font-weight:var(--mdc-typography-button-font-weight);
+    letter-spacing:var(--mdc-typography-button-letter-spacing);
+    text-decoration:var(--mdc-typography-button-text-decoration);
+    text-transform:var(--mdc-typography-button-text-transform);
+}
+
+@mixin overline {
+    font-family:var(--mdc-typography-overline-font-family);
+    font-size:var(--mdc-typography-overline-font-size);
+    line-height:var(--mdc-typography-overline-line-height);
+    font-weight:var(--mdc-typography-overline-font-weight);
+    letter-spacing:var(--mdc-typography-overline-letter-spacing);
+    text-decoration:var(--mdc-typography-overline-text-decoration);
+    text-transform:var(--mdc-typography-overline-text-transform);
+}
+
+//////////// Typography Settings
+
+
+@mixin materialIconInit {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    .mdc-elevation--z1 {
+        //background:var(--mdc-theme-surface-z1);
+    }
+    .mdc-elevation--z2 {
+        //background:var(--mdc-theme-surface-z2);
+    }
+    .mdc-elevation--z3 {
+        //background:var(--mdc-theme-surface-z3);
+    }
+    .mdc-elevation--z4 {
+        //background:var(--mdc-theme-surface-z4);
+    }
+    .mdc-elevation--z5 {
+        //background:var(--mdc-theme-surface-z5);
+    }
+    .mdc-elevation--z6 {
+        //background:var(--mdc-theme-surface-z6);
+    }
+    .mdc-elevation--z7 {
+        //background:var(--mdc-theme-surface-z7);
+    }
+
+
+    // Drawer Custom
+    .mdc-drawer {
+        &.mdc-drawer--modal {
+            background:var(--mdc-theme-surface-z1);
+
+            .mdc-drawer__header {
+                background:var(--mdc-theme-surface-z4);
+
+                .mdc-drawer__title {
+                    color:var(--mdc-theme-on-surface);
+                }
+                .mdc-drawer__subtitle {
+                    color:var(--mdc-theme-on-surface);
+                }
+            }
+
+            .mdc-drawer__content {
+                .mdc-deprecated-list-item {
+                    color: var(--mdc-theme-on-surface);
+
+                    .mdc-deprecated-list-item__graphic {
+                        color: var(--mdc-theme-surface-z9);
+                    }
+                }
+                .mdc-deprecated-list-item--activated {
+                    color: var(--mdc-theme-primary);
+
+                    .mdc-deprecated-list-item__graphic {
+                        color: var(--mdc-theme-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    // Top App Bar Custom
+    .mdc-top-app-bar {
+        background-color: var(--mdc-theme-primary);
+    }
+
+    .mdc-top-app-bar__title {
+        color: var(--mdc-theme-on-primary);
+    }
+
+    // Tab Custom
+    .mdc-tab {
+        .mdc-tab__icon, .mdc-tab__text-label {
+            color: var(--mdc-theme-on-surface);
+        }
+
+        &.mdc-tab--active {
+            .mdc-tab__icon, .mdc-tab__text-label {
+                color: var(--mdc-theme-primary);
+            }
+        }
+    }
+
+
+    // Table Custom
+    .mdc-data-table__header-cell {
+        @media (prefers-color-scheme: dark) {
+            color: var(--mdc-theme-on-surface);
+        }
+    }
+
+    .mdc-data-table__pagination-total, .mdc-data-table__pagination-rows-per-page-label, .mdc-data-table__cell {
+        @media (prefers-color-scheme: dark) {
+            color: var(--mdc-theme-on-surface);
+        }
+    }
+
+
+    // Dialog Custom
+    .mdc-dialog .mdc-dialog__surface {
+        background-color:var(--mdc-theme-surface-z3);
+    }
+
+    .mdc-dialog .mdc-dialog__title {
+        color: var(--mdc-theme-on-surface);
+    }
+
+    .mdc-dialog__actions {
+        gap: 1rem;
+    }
+
+    // Dialog Scrim Custom
+    .mdc-dialog .mdc-dialog__scrim {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+
+
+    // Text Field Custom
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+        border-color: var(--mdc-theme-surface-z5);
+        background: var(--mdc-theme-surface-z1);
+    }
+
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading, 
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch, 
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing {
+        border-color: var(--mdc-theme-surface-z7);
+        background: var(--mdc-theme-surface-z1);
+    }
+
+    .mdc-text-field--outlined .mdc-notched-outline {
+        z-index:-1;
+    }
+
+    .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+        color: var(--mdc-theme-surface-z9);
+    }
+
+    .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+        color: var(--mdc-theme-primary);
+    }
+
+    .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+        color: var(--mdc-theme-on-surface);
+    }
+
+
+
+    // Select Custom
+    .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__leading,
+    .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__notch,
+    .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__trailing {
+        border-color: var(--mdc-theme-surface-z5);
+        background: var(--mdc-theme-surface-z1);
+    }
+
+    .mdc-select--outlined:not(.mdc-select--disabled):not(.mdc-select--focused) .mdc-select__anchor:hover .mdc-notched-outline .mdc-notched-outline__leading, 
+    .mdc-select--outlined:not(.mdc-select--disabled):not(.mdc-select--focused) .mdc-select__anchor:hover .mdc-notched-outline .mdc-notched-outline__notch, 
+    .mdc-select--outlined:not(.mdc-select--disabled):not(.mdc-select--focused) .mdc-select__anchor:hover .mdc-notched-outline .mdc-notched-outline__trailing {
+        border-color: var(--mdc-theme-surface-z7);
+        background: var(--mdc-theme-surface-z1);
+    }
+
+    .mdc-select:not(.mdc-select--disabled) .mdc-floating-label {
+        color: var(--mdc-theme-surface-z9);
+    }
+
+    .mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label {
+        color: var(--mdc-theme-primary);
+    }
+
+    .mdc-select:not(.mdc-select--disabled) .mdc-select__selected-text {
+        color: var(--mdc-theme-on-surface);
+    }
+
+    .mdc-select:not(.mdc-select--disabled) .mdc-select__dropdown-icon {
+        fill: var(--mdc-theme-surface-z9);
+    }
+
+    .mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-select__dropdown-icon {
+        fill: var(--mdc-theme-primary);
+    }
+}
